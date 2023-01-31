@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg-slate-100 scroll-smooth">
+      <div
+        class="lg:flex h-fit md:h-screen"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        <div
+          class="mt-10 md:mt-0 flex items-center justify-center w-full px-6 py-8 lg:h-[32rem] lg:w-1/2"
+        >
+          <div class="max-w-xl">
+            <h2
+              class="text-3xl font-semibold md:pt-28 text-blue-600 lg:text-4xl"
+            >
+              Decent Tensile Structure
+            </h2>
+
+            <p class="mt-2 text-sm text-gray-500 lg:text-base">
+              is a Gujarat based company engaged in the designing, manufacturing
+              and installation of Tensile Fabric Structures,Retractable Tensile
+              Canopies, Retractable Tents and Complex Fabric Facades
+            </p>
+
+            <div class="flex flex-col mt-6 space-y-3 lg:space-y-0 lg:flex-row">
+              <a
+                href="/contact"
+                class="block px-5 py-2 text-sm font-medium tracking-wider text-center text-white transition-colors duration-300 transform bg-blue-600 rounded-md hover:bg-gray-700"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full h-64 lg:w-1/2 lg:h-auto">
+          <div
+            class="w-full h-full bg-cover"
+            style="
+              background-image: url(https://i.postimg.cc/k5K5Ws8R/24dbe4a1-6028-4fd6-8034-b27a23b8f0a3.jpg);
+            "
+          >
+            <div class="w-full h-full bg-black opacity-25"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://use.fontawesome.com/99f7174b35.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      html::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      html::-webkit-scrollbar:horizontal {
+        display: none;
+      }
+
+      html::-webkit-scrollbar-thumb {
+        background-color: #1e88e5;
+      }
+
+      html::-webkit-scrollbar-track {
+        background-color: #424242;
+      }
+      .fa {
+        padding: 8px;
+        font-size: 40px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        color: #25d366;
+      }
+
+      .fa:hover {
+        opacity: 0.7;
+      }
+
+      .fa-whatsapp {
+        color: #25d366;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include ('navbar.ejs') %>
+    <div class="bg-slate-100 scroll-smooth">
+      <div
+        class="lg:flex h-fit md:h-screen"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        <div
+          class="mt-10 md:mt-0 flex items-center justify-center w-full px-6 py-8 lg:h-[32rem] lg:w-1/2"
+        >
+          <div class="max-w-xl">
+            <h2
+              class="text-3xl font-semibold md:pt-28 text-blue-600 lg:text-4xl"
+            >
+              Gazebo Tent
+            </h2>
+
+            <p class="mt-2 text-sm text-gray-500 lg:text-base">
+              We are manufacturing wide range of parking structure For car
+              parking. We provide wide range of car parking For your sweet home
+              and commercial spaces. The protection provided by it against harsh
+              sunlight or pouring rains. The Parking Structure are available for
+              four wheelers As Two wheelers.
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full h-64 lg:w-1/2 lg:h-auto">
+          <div
+            class="w-full h-full bg-cover"
+            style="
+              background-image: url(https://i.postimg.cc/Dz3mkTgM/IMG-20230129-WA0009.jpg);
+              background-position: center;
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="mt-12">
+        <h2
+          class="text-center text-3xl font-semibold text-gray-800 lg:text-4xl"
+        >
+          Gallery
+        </h2>
+      </div>
+      <div>
+        <div
+          class="mt-6 grid grid-cols-1 sm:grid-cols-3 lg-grid-cols-3 gap-8 mx-10 md:gap-x-10 md:mx-10"
+        >
+          <div
+            class="overflow-hidden bg-cover rounded-lg cursor-pointer h-64 group"
+            style="
+              background-image: url('https://i.postimg.cc/RCXrXtGN/tensile-fabric-gazebo-500x500-1-Photo-Room.png');
+              background-position: center;
+            "
+          >
+            <div
+              class="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60"
+            >
+              <h2 class="mt-4 text-xl font-semibold text-white capitalize">
+                Resort Tent
+              </h2>
+              <a
+                href="/individual"
+                class="mt-2 text-lg tracking-wider text-blue-400 uppercase"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+          <div
+            class="overflow-hidden bg-cover rounded-lg cursor-pointer h-64 group"
+            style="
+              background-image: url('https://i.postimg.cc/J7NXgb2c/g3-500x500-2-Photo-Room.png');
+              background-position: center;
+            "
+          >
+            <div
+              class="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60"
+            >
+              <h2 class="mt-4 text-xl font-semibold text-white capitalize">
+                Gazibo Tent
+              </h2>
+              <p class="mt-2 text-lg tracking-wider text-blue-400 uppercase">
+                Learn More
+              </p>
+            </div>
+          </div>
+          <div
+            class="overflow-hidden bg-cover rounded-lg cursor-pointer h-64 group"
+            style="
+              background-image: url('https://i.postimg.cc/Dz3mkTgM/IMG-20230129-WA0009.jpg');
+              background-position: center;
+            "
+          >
+            <div
+              class="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60"
+            >
+              <h2 class="mt-4 text-xl font-semibold text-white capitalize">
+                Hanging Tent
+              </h2>
+              <p class="mt-2 text-lg tracking-wider text-blue-400 uppercase">
+                Learn More
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12"><%- include('experience.ejs') %></div>
+    <%- include('contact.ejs') %> <%- include('footer.ejs') %>
+    <a href="https://wa.me/9687575056?text=">
+      <div
+        class="fixed bottom-10 left-5 flex items-center bg-gray-200 rounded-lg"
+      >
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        <h2 class="px-2 py-1 text-sm">Need help? Chat with us.</h2>
+      </div>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

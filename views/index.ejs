@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://use.fontawesome.com/99f7174b35.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+      html::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      html::-webkit-scrollbar:horizontal {
+        display: none;
+      }
+
+      html::-webkit-scrollbar-thumb {
+        background-color: #1e88e5;
+      }
+
+      html::-webkit-scrollbar-track {
+        background-color: #424242;
+      }
+      .fa {
+        padding: 8px;
+        font-size: 40px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        color: #25d366;
+      }
+
+      .fa:hover {
+        opacity: 0.7;
+      }
+
+      .fa-whatsapp {
+        color: #25d366;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include ('navbar.ejs') %> <%- include ('hero.ejs') %>
+    <div
+      class="bg-gradient-to-t from-white via-[#accbe6] to-white pb-5"
+      id="products"
+      data-aos="fade-zoom-in"
+      data-aos-duration="1500"
+    >
+      <%- include ('products.ejs') %>
+    </div>
+    <%- include ('clients.ejs') %> <%- include ('reviews.ejs') %> <%- include
+    ('experience.ejs') %> <%- include('contact.ejs') %> <%-
+    include('footer.ejs') %>
+    <a href="https://wa.me/9687575056?text=">
+      <div
+        class="fixed bottom-10 left-5 flex items-center bg-gray-200 rounded-lg"
+      >
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        <h2 class="px-2 py-1 text-sm">Need help? Chat with us.</h2>
+      </div>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

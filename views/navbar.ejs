@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body
+    x-data="{navOpen: false, scrolledFromTop: false}"
+    x-init="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
+    @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
+    :class="{
+      'overflow-hidden': navOpen,
+      'overflow-scroll': !navOpen
+      }"
+  >
+    <header
+      class="fixed z-10 top-0 w-full bg-white shadow flex justify-between items-center px-4 md:px-8 transition-all duration-200 h-fit"
+    >
+      <a href="/home#" data-aos="fade-right" data-aos-duration="2000">
+        <img
+          src="https://i.postimg.cc/9M7z7kz9/decent-tensile-final-with-bg-2.png"
+          alt="Logo"
+          class="h-12 w-auto sm:h-20"
+        />
+      </a>
+      <nav>
+        <button class="md:hidden" @click="navOpen = !navOpen">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="black"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+        <ul
+          class="fixed bg-blue-500 md:bg-white left-0 right-0 min-h-screen px-4 pt-8 space-y-4 text-gray-600 transform transition duration-300 translate-x-full md:relative md:flex md:space-x-6 md:min-h-0 md:px-0 md:py-0 md:space-y-0 md:translate-x-0"
+          :class="{'translate-x-full': !navOpen}"
+          :class="{'translate-x-0': navOpen}"
+        >
+          <li class="" data-aos="fade-left" data-aos-duration="2000">
+            <a
+              href="/home#"
+              @click="navOpen = false"
+              class="block px-3 py-2 text-white md:text-gray-600 rounded-lg hover:bg-gray-100 lg:mx-2"
+              >Home</a
+            >
+          </li>
+          <li class="" data-aos="fade-left" data-aos-duration="2000">
+            <a
+              href="/home#products"
+              @click="navOpen = false"
+              class="block px-3 py-2 text-gray-600 rounded-lg hover:bg-gray-100 lg:mx-2"
+              >Products</a
+            >
+          </li>
+          <li data-aos="fade-left" data-aos-duration="2000">
+            <a
+              href="#about"
+              @click="navOpen = false"
+              class="block px-3 py-2 text-gray-600 rounded-lg hover:bg-gray-100 lg:mx-2"
+              >About</a
+            >
+          </li>
+          <li data-aos="fade-left" data-aos-duration="2000">
+            <a
+              href="/home#contact"
+              @click="navOpen = false"
+              class="block px-3 py-2 text-gray-600 rounded-lg hover:bg-gray-100 lg:mx-2"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

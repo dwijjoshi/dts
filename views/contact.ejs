@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+  This component uses @tailwindcss/forms
+
+  yarn add @tailwindcss/forms
+  npm install @tailwindcss/forms
+
+  plugins: [require('@tailwindcss/forms')]
+-->
+
+    <section
+      class="bg-slate-300"
+      data-aos="fade-zoom-in"
+      data-aos-duration="2500"
+      id="contact"
+    >
+      <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="text-center font-semibold text-4xl mb-6 text-blue-600 pt-5">
+          Contact Us
+        </div>
+        <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+          <div class="lg:col-span-2 lg:py-12">
+            <p class="max-w-xl text-lg">
+              Contact us for any enquiry you have in your mind. We will get back
+              to you as soon as possible.
+            </p>
+
+            <div class="mt-8">
+              <h2 href="" class="text-2xl font-bold text-blue-600">
+                9687575056
+              </h2>
+
+              <address class="mt-2 not-italic">
+                <span class="text-blue-600">Office Address</span>
+                : 3, Maruti Complex, Laxminarayn Temple Road, Manjalpur,
+                Vadodara, 390011
+              </address>
+              <address class="mt-4 not-italic">
+                <span class="text-blue-600">Factory Address</span> : 3/153, Nr
+                Ramji Mandir, Sarar, Vadodara, 391240
+              </address>
+            </div>
+          </div>
+
+          <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+            <form action="" class="space-y-4">
+              <div>
+                <label class="sr-only" for="name">Name</label>
+                <input
+                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  placeholder="Name"
+                  type="text"
+                  id="name"
+                />
+              </div>
+
+              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="sr-only" for="email">Email</label>
+                  <input
+                    class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                    placeholder="Email address"
+                    type="email"
+                    id="email"
+                  />
+                </div>
+
+                <div>
+                  <label class="sr-only" for="phone">Phone</label>
+                  <input
+                    class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                    placeholder="Phone Number"
+                    type="tel"
+                    id="phone"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="sr-only" for="message">Message</label>
+                <textarea
+                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  placeholder="Message"
+                  rows="4"
+                  id="message"
+                ></textarea>
+              </div>
+
+              <div class="mt-4">
+                <button
+                  type="submit"
+                  class="inline-flex w-full items-center justify-center rounded-lg bg-blue-600 px-5 py-3 text-white sm:w-auto"
+                >
+                  <span class="font-medium"> Send Enquiry </span>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ml-3 h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
